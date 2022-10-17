@@ -29,4 +29,16 @@ int count = 0;
 
 // Цикл перебора начального массива с отбором в результирующий массив только тех строк,
 // длина которых удовлетворяет заданным требованиям.
+for (int i = 0; i < array.Length; i++)
+{
+    checkString = array[i];
+    if (StringLengthCount(checkString) < 4)
+    {
+        resultArray[count] = checkString;
+        count++;
+    }
+}
 
+PrintArray(array, ", ");
+Console.Write(" -> ");
+PrintArray(resultArray, ", ");

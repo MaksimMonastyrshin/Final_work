@@ -49,3 +49,18 @@ int StringLengthCount(string paramString)
      return paramString.Length;
 }
 
+// Метод вывода массива на экран без пустых значений.
+void PrintArray(string[] paramArray, string delimiter)
+{
+    Console.Write("[");
+    count = paramArray.Length;
+    for (int i = 0; i < count; i++)
+    {
+        if (String.IsNullOrEmpty(paramArray[i]) == false)
+        {
+            Console.Write($"\"{paramArray[i]}\"");
+            Console.Write(delimiter);
+        }
+    }
+    Console.Write("\b\b]");
+}

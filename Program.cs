@@ -43,5 +43,9 @@ PrintArray(array, ", ");
 Console.Write(" -> ");
 PrintArray(resultArray, ", ");
 
-
+// Метод оценки длины переданных в параметрах строк.
+int StringLengthCount(string paramString)
+{
+     return paramString.Length;
+}
 

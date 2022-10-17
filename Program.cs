@@ -42,3 +42,4 @@ for (int i = 0; i < array.Length; i++)
 PrintArray(array, ", ");
 Console.Write(" -> ");
 PrintArray(resultArray, ", ");
+
